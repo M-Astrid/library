@@ -15,6 +15,7 @@
   bin/console doctrine:database:create
 
   и выполните миграции
+  
   bin/console make:migration
   
   bin/console doctrine:migrations:migrate
