@@ -14,8 +14,6 @@
 4.Создайте базу данных для приложения: 
   bin/console doctrine:database:create
 
-  и выполните миграции:
-  bin/console make:migration
-  
+  и выполните миграции:  
   bin/console doctrine:migrations:migrate
 
