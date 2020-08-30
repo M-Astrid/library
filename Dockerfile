@@ -14,6 +14,7 @@ RUN apt-get update && apt-get install -y \
 
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
-RUN git clone https://github.com/M-Astrid/library.git app
+COPY . /app
+COPY ./docker/php/php.ini /usr/local/etc/php/php.ini
 
 WORKDIR ./app
